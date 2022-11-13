@@ -1,11 +1,18 @@
 import axios from "axios";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Calculator = () => {
   const [result, setResult] = useState("");
+  const navigate = useNavigate();
 
   const handleClick = (e: any) => {
-    setResult(result.concat(e.target.name));
+    if (result === "Error") {
+      setResult(e.target.name);
+    }
+    else {
+      setResult(result.concat(e.target.name));
+    }
   };
 
   const clear = () => {
@@ -32,6 +39,7 @@ const Calculator = () => {
   return (
     <>
       <div className="container">
+        <button className="linkButton" onClick={() => navigate('/history')}>History</button>
         <form action="">
           <textarea value={result} />
         </form>

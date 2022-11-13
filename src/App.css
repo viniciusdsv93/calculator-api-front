@@ -23,6 +23,9 @@ body {
   border: 10px solid #101116;
   background: #101116;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .keypad {
@@ -87,4 +90,53 @@ button:hover {
 
 .highlight {
   background: hsl(110, 60%, 50%);
+  color: #101116;
+}
+
+.linkButton {
+  background: hsl(110, 60%, 50%);
+  color: #101116;
+  padding: 8px 16px;
+  width: fit-content;
+  margin-bottom: 14px;
+}
+
+.resultsListGrid {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  width: 80vw;
+  max-width: 800px;
+  border: 10px solid #101116;
+  background: #101116;
+  border-radius: 5px;
+  color: #fff;
+  padding: 16px;
+  overflow: hidden;
+}
+
+.tableContainer {
+  overflow: auto;
+}
+
+table {
+  min-width: max-content;
+  width: 100%;
+}
+
+th {
+  text-align: start;
+  min-width: fit-content;
+  padding-right: 20px;
+}
+
+tr {
+  vertical-align: middle;
+  line-height: 30px;
+}
+
+td {
+  padding-right: 20px;
 }
