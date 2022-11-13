@@ -1,14 +1,12 @@
 # Front-End para consumo da API de cálculo de expressões matemáticas
 
-### Screenshot
+### Screenshot - Calculator
 
 ![](./screenshot.png)
 
-### Screenshot - Mobile Version
+### Screenshot - History
 
-<p align="center">
-  <img width="30%" src="./screenshot-mobile.png">
-</p>
+![](./screenshot-history.png)
 
 ### Construído com
 
